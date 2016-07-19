@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D48B0791D3EED1D00AB798D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B0781D3EED1D00AB798D /* AppDelegate.swift */; };
+		5D48B07B1D3EED1D00AB798D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B07A1D3EED1D00AB798D /* ViewController.swift */; };
+		5D48B07D1D3EED1D00AB798D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D48B07C1D3EED1D00AB798D /* Assets.xcassets */; };
+		5D48B0801D3EED1D00AB798D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D48B07E1D3EED1D00AB798D /* Main.storyboard */; };
+		5D48B08B1D3EED1D00AB798D /* MoeMALTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B08A1D3EED1D00AB798D /* MoeMALTests.swift */; };
+		5D48B0961D3EED1D00AB798D /* MoeMALUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B0951D3EED1D00AB798D /* MoeMALUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D48B0871D3EED1D00AB798D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D48B06D1D3EED1D00AB798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D48B0741D3EED1D00AB798D;
+			remoteInfo = MoeMAL;
+		};
+		5D48B0921D3EED1D00AB798D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D48B06D1D3EED1D00AB798D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D48B0741D3EED1D00AB798D;
+			remoteInfo = MoeMAL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D48B0751D3EED1D00AB798D /* MoeMAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoeMAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D48B0781D3EED1D00AB798D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D48B07A1D3EED1D00AB798D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D48B07C1D3EED1D00AB798D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D48B07F1D3EED1D00AB798D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D48B0811D3EED1D00AB798D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D48B0861D3EED1D00AB798D /* MoeMALTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoeMALTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D48B08A1D3EED1D00AB798D /* MoeMALTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeMALTests.swift; sourceTree = "<group>"; };
+		5D48B08C1D3EED1D00AB798D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D48B0911D3EED1D00AB798D /* MoeMALUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoeMALUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D48B0951D3EED1D00AB798D /* MoeMALUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeMALUITests.swift; sourceTree = "<group>"; };
+		5D48B0971D3EED1D00AB798D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D48B0721D3EED1D00AB798D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D48B0831D3EED1D00AB798D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D48B08E1D3EED1D00AB798D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D48B06C1D3EED1D00AB798D = {
+			isa = PBXGroup;
+			children = (
+				5D48B0771D3EED1D00AB798D /* MoeMAL */,
+				5D48B0891D3EED1D00AB798D /* MoeMALTests */,
+				5D48B0941D3EED1D00AB798D /* MoeMALUITests */,
+				5D48B0761D3EED1D00AB798D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5D48B0761D3EED1D00AB798D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D48B0751D3EED1D00AB798D /* MoeMAL.app */,
+				5D48B0861D3EED1D00AB798D /* MoeMALTests.xctest */,
+				5D48B0911D3EED1D00AB798D /* MoeMALUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D48B0771D3EED1D00AB798D /* MoeMAL */ = {
+			isa = PBXGroup;
+			children = (
+				5D48B0781D3EED1D00AB798D /* AppDelegate.swift */,
+				5D48B07A1D3EED1D00AB798D /* ViewController.swift */,
+				5D48B07C1D3EED1D00AB798D /* Assets.xcassets */,
+				5D48B07E1D3EED1D00AB798D /* Main.storyboard */,
+				5D48B0811D3EED1D00AB798D /* Info.plist */,
+			);
+			path = MoeMAL;
+			sourceTree = "<group>";
+		};
+		5D48B0891D3EED1D00AB798D /* MoeMALTests */ = {
+			isa = PBXGroup;
+			children = (
+				5D48B08A1D3EED1D00AB798D /* MoeMALTests.swift */,
+				5D48B08C1D3EED1D00AB798D /* Info.plist */,
+			);
+			path = MoeMALTests;
+			sourceTree = "<group>";
+		};
+		5D48B0941D3EED1D00AB798D /* MoeMALUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5D48B0951D3EED1D00AB798D /* MoeMALUITests.swift */,
+				5D48B0971D3EED1D00AB798D /* Info.plist */,
+			);
+			path = MoeMALUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5D48B0741D3EED1D00AB798D /* MoeMAL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D48B09A1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMAL" */;
+			buildPhases = (
+				5D48B0711D3EED1D00AB798D /* Sources */,
+				5D48B0721D3EED1D00AB798D /* Frameworks */,
+				5D48B0731D3EED1D00AB798D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoeMAL;
+			productName = MoeMAL;
+			productReference = 5D48B0751D3EED1D00AB798D /* MoeMAL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D48B0851D3EED1D00AB798D /* MoeMALTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D48B09D1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALTests" */;
+			buildPhases = (
+				5D48B0821D3EED1D00AB798D /* Sources */,
+				5D48B0831D3EED1D00AB798D /* Frameworks */,
+				5D48B0841D3EED1D00AB798D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D48B0881D3EED1D00AB798D /* PBXTargetDependency */,
+			);
+			name = MoeMALTests;
+			productName = MoeMALTests;
+			productReference = 5D48B0861D3EED1D00AB798D /* MoeMALTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5D48B0901D3EED1D00AB798D /* MoeMALUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D48B0A01D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALUITests" */;
+			buildPhases = (
+				5D48B08D1D3EED1D00AB798D /* Sources */,
+				5D48B08E1D3EED1D00AB798D /* Frameworks */,
+				5D48B08F1D3EED1D00AB798D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D48B0931D3EED1D00AB798D /* PBXTargetDependency */,
+			);
+			name = MoeMALUITests;
+			productName = MoeMALUITests;
+			productReference = 5D48B0911D3EED1D00AB798D /* MoeMALUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D48B06D1D3EED1D00AB798D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = DrabWeb;
+				TargetAttributes = {
+					5D48B0741D3EED1D00AB798D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					5D48B0851D3EED1D00AB798D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5D48B0741D3EED1D00AB798D;
+					};
+					5D48B0901D3EED1D00AB798D = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 5D48B0741D3EED1D00AB798D;
+					};
+				};
+			};
+			buildConfigurationList = 5D48B0701D3EED1D00AB798D /* Build configuration list for PBXProject "MoeMAL" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5D48B06C1D3EED1D00AB798D;
+			productRefGroup = 5D48B0761D3EED1D00AB798D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D48B0741D3EED1D00AB798D /* MoeMAL */,
+				5D48B0851D3EED1D00AB798D /* MoeMALTests */,
+				5D48B0901D3EED1D00AB798D /* MoeMALUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D48B0731D3EED1D00AB798D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D48B07D1D3EED1D00AB798D /* Assets.xcassets in Resources */,
+				5D48B0801D3EED1D00AB798D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D48B0841D3EED1D00AB798D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D48B08F1D3EED1D00AB798D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D48B0711D3EED1D00AB798D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D48B07B1D3EED1D00AB798D /* ViewController.swift in Sources */,
+				5D48B0791D3EED1D00AB798D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D48B0821D3EED1D00AB798D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D48B08B1D3EED1D00AB798D /* MoeMALTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D48B08D1D3EED1D00AB798D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D48B0961D3EED1D00AB798D /* MoeMALUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D48B0881D3EED1D00AB798D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D48B0741D3EED1D00AB798D /* MoeMAL */;
+			targetProxy = 5D48B0871D3EED1D00AB798D /* PBXContainerItemProxy */;
+		};
+		5D48B0931D3EED1D00AB798D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D48B0741D3EED1D00AB798D /* MoeMAL */;
+			targetProxy = 5D48B0921D3EED1D00AB798D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5D48B07E1D3EED1D00AB798D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D48B07F1D3EED1D00AB798D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D48B0981D3EED1D00AB798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5D48B0991D3EED1D00AB798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5D48B09B1D3EED1D00AB798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MoeMAL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drabweb.MoeMAL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5D48B09C1D3EED1D00AB798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MoeMAL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drabweb.MoeMAL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5D48B09E1D3EED1D00AB798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MoeMALTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drabweb.MoeMALTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoeMAL.app/Contents/MacOS/MoeMAL";
+			};
+			name = Debug;
+		};
+		5D48B09F1D3EED1D00AB798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MoeMALTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drabweb.MoeMALTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoeMAL.app/Contents/MacOS/MoeMAL";
+			};
+			name = Release;
+		};
+		5D48B0A11D3EED1D00AB798D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MoeMALUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drabweb.MoeMALUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoeMAL;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		5D48B0A21D3EED1D00AB798D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MoeMALUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = drabweb.MoeMALUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = MoeMAL;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D48B0701D3EED1D00AB798D /* Build configuration list for PBXProject "MoeMAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D48B0981D3EED1D00AB798D /* Debug */,
+				5D48B0991D3EED1D00AB798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D48B09A1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMAL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D48B09B1D3EED1D00AB798D /* Debug */,
+				5D48B09C1D3EED1D00AB798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D48B09D1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D48B09E1D3EED1D00AB798D /* Debug */,
+				5D48B09F1D3EED1D00AB798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5D48B0A01D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D48B0A11D3EED1D00AB798D /* Debug */,
+				5D48B0A21D3EED1D00AB798D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D48B06D1D3EED1D00AB798D /* Project object */;
+}
