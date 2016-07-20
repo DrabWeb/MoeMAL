@@ -28,9 +28,13 @@ class MALObject {
                 /// The XML for the entire page
                 let pageXml : HTMLDocument = try HTMLDocument(string: responseString.result.value!);
                 
-                // Yes I probably shouldn't do this index chain for getting the content div
+                // Yes I probably shouldn't do this index chaining for scraping
+                
                 /// The XML of the content tr element
                 let contentXml : XMLElement = pageXml.body!.children[0].children[3].children[2].children[1].children[0].children[0];
+                
+                // Set the title(Its outside of the contentXml div, so its easier to do here)
+                self.title = pageXml.body!.children[0].children[3].children[2].children[0].children[1].children[0].stringValue;
                 
                 // Parse the content XML
                 self.parseXml(contentXml);
@@ -48,7 +52,9 @@ class MALObject {
         let object : MALObject = MALObject();
         
         // Parse the XML
-        print(xml);
+//        print(xml);
+        
+        print(self.title);
         
         // Return the MAL object
         return object;
