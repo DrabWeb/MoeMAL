@@ -7,7 +7,7 @@
 
 import Cocoa
 import Alamofire
-import SWXMLHash
+import Fuzi
 
 /// The base class for MAL anime/manga objects
 class MALObject {
@@ -24,12 +24,26 @@ class MALObject {
     func fromUrl(url : String, completionHandler: ((MALObject) -> ())) {
         // Make the request
         Alamofire.request(.GET, url).responseString { responseString in
-            
+            do {
+                /// The XML for the entire page
+                let pageXml : HTMLDocument = try HTMLDocument(string: responseString.result.value!);
+                
+                // Yes I probably shouldn't do this index chain for getting the content div
+                /// The XML of the content tr element
+                let contentXml : XMLElement = pageXml.body!.children[0].children[3].children[2].children[1].children[0].children[0];
+                
+                // Parse the content XML
+                self.parseXml(contentXml);
+            }
+            catch let error as NSError {
+                // Print the error to the log
+                print("\(self): Error parsing downloaded XML from \(url), \(error.description)");
+            }
         }
     }
     
-    /// Parses the given MAL XML and returns the object that represents it's datas
-    func parseXml(xml : XMLIndexer) -> MALObject {
+    /// Parses the given MAL XML(Passed the tr that holds the actual content) and returns an object from it
+    func parseXml(xml : XMLElement) -> MALObject {
         /// The MAL object to return
         let object : MALObject = MALObject();
         

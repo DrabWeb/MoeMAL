@@ -22,7 +22,7 @@ class ViewController: NSViewController {
         MALAnime().fromUrl("http://myanimelist.net/anime/32664/", completionHandler: animeLoaded);
     }
     
-    func animeLoaded(anime : MALAnime) {
+    func animeLoaded(anime : MALObject) {
         print(anime);
     }
     
