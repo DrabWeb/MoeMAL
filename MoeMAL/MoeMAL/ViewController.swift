@@ -8,10 +8,33 @@
 import Cocoa
 
 class ViewController: NSViewController {
-
+    
+    /// The main window of this view controller
+    var window : NSWindow = NSWindow();
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        // Do view setup here.
+        // Style the window
+        styleWindow();
+        
+        // Load an example anime
+        MALAnime().fromUrl("http://myanimelist.net/anime/32664/", completionHandler: animeLoaded);
+    }
+    
+    func animeLoaded(anime : MALAnime) {
+        print(anime);
+    }
+    
+    /// Styles the window
+    func styleWindow() {
+        // Get the window
+        window = NSApplication.sharedApplication().windows.last!;
+        
+        // Style the window
+        window.titleVisibility = .Hidden;
+        window.titlebarAppearsTransparent = true;
+        window.standardWindowButton(.CloseButton)?.superview?.layer?.backgroundColor = MMColors.titlebarColor.CGColor;
+        window.backgroundColor = MMColors.windowBackgroundColor;
     }
 }

@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		361209ABC2C5BAF87FA47F3C /* Pods_MoeMALTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E2E3ADC53DC604E0BCB728E /* Pods_MoeMALTests.framework */; };
+		5D25C28D1D4016D000C4CD11 /* NSColorFromHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25C28C1D4016D000C4CD11 /* NSColorFromHex.swift */; };
+		5D25C2901D40178700C4CD11 /* MMColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D25C28F1D40178700C4CD11 /* MMColors.swift */; };
 		5D48B0791D3EED1D00AB798D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B0781D3EED1D00AB798D /* AppDelegate.swift */; };
 		5D48B07B1D3EED1D00AB798D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B07A1D3EED1D00AB798D /* ViewController.swift */; };
 		5D48B07D1D3EED1D00AB798D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D48B07C1D3EED1D00AB798D /* Assets.xcassets */; };
 		5D48B0801D3EED1D00AB798D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D48B07E1D3EED1D00AB798D /* Main.storyboard */; };
 		5D48B08B1D3EED1D00AB798D /* MoeMALTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B08A1D3EED1D00AB798D /* MoeMALTests.swift */; };
 		5D48B0961D3EED1D00AB798D /* MoeMALUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D48B0951D3EED1D00AB798D /* MoeMALUITests.swift */; };
+		5DC062AA1D3FF7D800EEBE8E /* MALObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC062A91D3FF7D800EEBE8E /* MALObject.swift */; };
+		5DC062AC1D3FF83F00EEBE8E /* MALAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC062AB1D3FF83F00EEBE8E /* MALAnime.swift */; };
+		5DC062AE1D3FF85700EEBE8E /* MALManga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC062AD1D3FF85700EEBE8E /* MALManga.swift */; };
+		ACFBE146FD16BF75D160AD00 /* Pods_MoeMALUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5559A771266CB24C0131CC /* Pods_MoeMALUITests.framework */; };
+		E56B8C8F040F345498312A67 /* Pods_MoeMAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F211F2A44EECF5CF9C5A4 /* Pods_MoeMAL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D0F211F2A44EECF5CF9C5A4 /* Pods_MoeMAL.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoeMAL.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EA9625081B87AD62020B75D /* Pods-MoeMALTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMALTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMALTests/Pods-MoeMALTests.debug.xcconfig"; sourceTree = "<group>"; };
+		470496766B75C29ACA63F81D /* Pods-MoeMAL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMAL.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMAL/Pods-MoeMAL.debug.xcconfig"; sourceTree = "<group>"; };
+		4E2E3ADC53DC604E0BCB728E /* Pods_MoeMALTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoeMALTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D25C28C1D4016D000C4CD11 /* NSColorFromHex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSColorFromHex.swift; sourceTree = "<group>"; };
+		5D25C28F1D40178700C4CD11 /* MMColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMColors.swift; sourceTree = "<group>"; };
 		5D48B0751D3EED1D00AB798D /* MoeMAL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoeMAL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D48B0781D3EED1D00AB798D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D48B07A1D3EED1D00AB798D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +59,14 @@
 		5D48B0911D3EED1D00AB798D /* MoeMALUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoeMALUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D48B0951D3EED1D00AB798D /* MoeMALUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoeMALUITests.swift; sourceTree = "<group>"; };
 		5D48B0971D3EED1D00AB798D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DC062A91D3FF7D800EEBE8E /* MALObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MALObject.swift; sourceTree = "<group>"; };
+		5DC062AB1D3FF83F00EEBE8E /* MALAnime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MALAnime.swift; sourceTree = "<group>"; };
+		5DC062AD1D3FF85700EEBE8E /* MALManga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MALManga.swift; sourceTree = "<group>"; };
+		A823766E2F9043527E776919 /* Pods-MoeMALUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMALUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMALUITests/Pods-MoeMALUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA5559A771266CB24C0131CC /* Pods_MoeMALUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoeMALUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA21C9665D029640484178FD /* Pods-MoeMAL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMAL.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMAL/Pods-MoeMAL.release.xcconfig"; sourceTree = "<group>"; };
+		CB3B2662026C1590E00006C4 /* Pods-MoeMALUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMALUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMALUITests/Pods-MoeMALUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD490C87774556E5D7BCA140 /* Pods-MoeMALTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMALTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMALTests/Pods-MoeMALTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E56B8C8F040F345498312A67 /* Pods_MoeMAL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				361209ABC2C5BAF87FA47F3C /* Pods_MoeMALTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,12 +90,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACFBE146FD16BF75D160AD00 /* Pods_MoeMALUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271E25D9CC364BB07B2BD098 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D0F211F2A44EECF5CF9C5A4 /* Pods_MoeMAL.framework */,
+				4E2E3ADC53DC604E0BCB728E /* Pods_MoeMALTests.framework */,
+				BA5559A771266CB24C0131CC /* Pods_MoeMALUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5D25C28A1D4016BB00C4CD11 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5D25C28B1D4016C800C4CD11 /* NSColorFromHex */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		5D25C28B1D4016C800C4CD11 /* NSColorFromHex */ = {
+			isa = PBXGroup;
+			children = (
+				5D25C28C1D4016D000C4CD11 /* NSColorFromHex.swift */,
+			);
+			name = NSColorFromHex;
+			sourceTree = "<group>";
+		};
+		5D25C28E1D40177400C4CD11 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5D25C28F1D40178700C4CD11 /* MMColors.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
 		5D48B06C1D3EED1D00AB798D = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +138,8 @@
 				5D48B0891D3EED1D00AB798D /* MoeMALTests */,
 				5D48B0941D3EED1D00AB798D /* MoeMALUITests */,
 				5D48B0761D3EED1D00AB798D /* Products */,
+				8E6B5C0054CED346B148B3AF /* Pods */,
+				271E25D9CC364BB07B2BD098 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +158,11 @@
 			children = (
 				5D48B0781D3EED1D00AB798D /* AppDelegate.swift */,
 				5D48B07A1D3EED1D00AB798D /* ViewController.swift */,
+				5DC062A71D3FF7BA00EEBE8E /* Storyboards */,
+				5D25C28E1D40177400C4CD11 /* Objects */,
+				5DC062A61D3FF7AD00EEBE8E /* MAL API */,
+				5D25C28A1D4016BB00C4CD11 /* Libraries */,
 				5D48B07C1D3EED1D00AB798D /* Assets.xcassets */,
-				5D48B07E1D3EED1D00AB798D /* Main.storyboard */,
 				5D48B0811D3EED1D00AB798D /* Info.plist */,
 			);
 			path = MoeMAL;
@@ -122,6 +186,45 @@
 			path = MoeMALUITests;
 			sourceTree = "<group>";
 		};
+		5DC062A61D3FF7AD00EEBE8E /* MAL API */ = {
+			isa = PBXGroup;
+			children = (
+				5DC062A81D3FF7CB00EEBE8E /* Objects */,
+			);
+			name = "MAL API";
+			sourceTree = "<group>";
+		};
+		5DC062A71D3FF7BA00EEBE8E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5D48B07E1D3EED1D00AB798D /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5DC062A81D3FF7CB00EEBE8E /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				5DC062A91D3FF7D800EEBE8E /* MALObject.swift */,
+				5DC062AB1D3FF83F00EEBE8E /* MALAnime.swift */,
+				5DC062AD1D3FF85700EEBE8E /* MALManga.swift */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+		8E6B5C0054CED346B148B3AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				470496766B75C29ACA63F81D /* Pods-MoeMAL.debug.xcconfig */,
+				CA21C9665D029640484178FD /* Pods-MoeMAL.release.xcconfig */,
+				3EA9625081B87AD62020B75D /* Pods-MoeMALTests.debug.xcconfig */,
+				DD490C87774556E5D7BCA140 /* Pods-MoeMALTests.release.xcconfig */,
+				CB3B2662026C1590E00006C4 /* Pods-MoeMALUITests.debug.xcconfig */,
+				A823766E2F9043527E776919 /* Pods-MoeMALUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D48B09A1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMAL" */;
 			buildPhases = (
+				AC0B7E881CF66C9D88426F13 /* 📦 Check Pods Manifest.lock */,
 				5D48B0711D3EED1D00AB798D /* Sources */,
 				5D48B0721D3EED1D00AB798D /* Frameworks */,
 				5D48B0731D3EED1D00AB798D /* Resources */,
+				37AB275C12C7469BD8DD307E /* 📦 Embed Pods Frameworks */,
+				77D592D3C7D12164B745A9E2 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,9 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D48B09D1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALTests" */;
 			buildPhases = (
+				4444F56CFF1D6170B6844DFB /* 📦 Check Pods Manifest.lock */,
 				5D48B0821D3EED1D00AB798D /* Sources */,
 				5D48B0831D3EED1D00AB798D /* Frameworks */,
 				5D48B0841D3EED1D00AB798D /* Resources */,
+				23A35F38F6C4099EB1A9DE5B /* 📦 Embed Pods Frameworks */,
+				1B9CD14233E56026F91FE9F8 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D48B0A01D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALUITests" */;
 			buildPhases = (
+				89A793EFD95814748C9E7EB7 /* 📦 Check Pods Manifest.lock */,
 				5D48B08D1D3EED1D00AB798D /* Sources */,
 				5D48B08E1D3EED1D00AB798D /* Frameworks */,
 				5D48B08F1D3EED1D00AB798D /* Resources */,
+				85C4890B87BB314BFE1EBE84 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -247,12 +358,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B9CD14233E56026F91FE9F8 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoeMALTests/Pods-MoeMALTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23A35F38F6C4099EB1A9DE5B /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoeMALTests/Pods-MoeMALTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37AB275C12C7469BD8DD307E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoeMAL/Pods-MoeMAL-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4444F56CFF1D6170B6844DFB /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		77D592D3C7D12164B745A9E2 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoeMAL/Pods-MoeMAL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		85C4890B87BB314BFE1EBE84 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoeMALUITests/Pods-MoeMALUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89A793EFD95814748C9E7EB7 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AC0B7E881CF66C9D88426F13 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5D48B0711D3EED1D00AB798D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5D48B07B1D3EED1D00AB798D /* ViewController.swift in Sources */,
+				5DC062AC1D3FF83F00EEBE8E /* MALAnime.swift in Sources */,
+				5DC062AA1D3FF7D800EEBE8E /* MALObject.swift in Sources */,
+				5DC062AE1D3FF85700EEBE8E /* MALManga.swift in Sources */,
+				5D25C2901D40178700C4CD11 /* MMColors.swift in Sources */,
+				5D25C28D1D4016D000C4CD11 /* NSColorFromHex.swift in Sources */,
 				5D48B0791D3EED1D00AB798D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +621,7 @@
 		};
 		5D48B09B1D3EED1D00AB798D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 470496766B75C29ACA63F81D /* Pods-MoeMAL.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -394,6 +634,7 @@
 		};
 		5D48B09C1D3EED1D00AB798D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA21C9665D029640484178FD /* Pods-MoeMAL.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -406,6 +647,7 @@
 		};
 		5D48B09E1D3EED1D00AB798D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3EA9625081B87AD62020B75D /* Pods-MoeMALTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -419,6 +661,7 @@
 		};
 		5D48B09F1D3EED1D00AB798D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD490C87774556E5D7BCA140 /* Pods-MoeMALTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -432,6 +675,7 @@
 		};
 		5D48B0A11D3EED1D00AB798D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB3B2662026C1590E00006C4 /* Pods-MoeMALUITests.debug.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MoeMALUITests/Info.plist;
@@ -445,6 +689,7 @@
 		};
 		5D48B0A21D3EED1D00AB798D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A823766E2F9043527E776919 /* Pods-MoeMALUITests.release.xcconfig */;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = MoeMALUITests/Info.plist;
@@ -475,6 +720,7 @@
 				5D48B09C1D3EED1D00AB798D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D48B09D1D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALTests" */ = {
 			isa = XCConfigurationList;
@@ -483,6 +729,7 @@
 				5D48B09F1D3EED1D00AB798D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5D48B0A01D3EED1D00AB798D /* Build configuration list for PBXNativeTarget "MoeMALUITests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +738,7 @@
 				5D48B0A21D3EED1D00AB798D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
