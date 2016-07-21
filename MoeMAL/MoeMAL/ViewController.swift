@@ -19,9 +19,16 @@ class ViewController: NSViewController {
         styleWindow();
         
         // Load an example anime
-        MALAnime().fromUrl("http://myanimelist.net/anime/32664/", completionHandler: { object in });
-        MALAnime().fromUrl("http://myanimelist.net/anime/32828/Amaama_to_Inazuma", completionHandler: { object in });
-        MALAnime().fromUrl("http://myanimelist.net/manga/32833/Himegoto", completionHandler: { object in });
+        MALAnime().fromUrl("http://myanimelist.net/anime/32664/", completionHandler: objectLoaded);
+        MALAnime().fromUrl("http://myanimelist.net/anime/32828/Amaama_to_Inazuma", completionHandler: objectLoaded);
+        MALAnime().fromUrl("http://myanimelist.net/manga/32833/Himegoto", completionHandler: objectLoaded);
+    }
+    
+    func objectLoaded(object : MALObject) {
+        print("\(object.imageUrl)");
+        print("\(object.title)(\(object.japaneseTitle))");
+        print("\(object.synopsis)");
+        print("");
     }
     
     /// Styles the window

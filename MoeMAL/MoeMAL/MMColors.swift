@@ -14,4 +14,7 @@ class MMColors {
     
     /// The window background color
     static let windowBackgroundColor : NSColor = NSColor(hexString: "#212121")!;
+    
+    /// The default color for card views
+    static let cardColor : NSColor = NSColor(hexString: "#212121")!;
 }

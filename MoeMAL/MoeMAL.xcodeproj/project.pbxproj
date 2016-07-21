@@ -19,6 +19,8 @@
 		5DC062AA1D3FF7D800EEBE8E /* MALObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC062A91D3FF7D800EEBE8E /* MALObject.swift */; };
 		5DC062AC1D3FF83F00EEBE8E /* MALAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC062AB1D3FF83F00EEBE8E /* MALAnime.swift */; };
 		5DC062AE1D3FF85700EEBE8E /* MALManga.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DC062AD1D3FF85700EEBE8E /* MALManga.swift */; };
+		5DE391F81D41488C00ED1F9A /* MMExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE391F71D41488C00ED1F9A /* MMExtensions.swift */; };
+		5DE391FB1D41597E00ED1F9A /* MMCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE391FA1D41597E00ED1F9A /* MMCardView.swift */; };
 		ACFBE146FD16BF75D160AD00 /* Pods_MoeMALUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA5559A771266CB24C0131CC /* Pods_MoeMALUITests.framework */; };
 		E56B8C8F040F345498312A67 /* Pods_MoeMAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D0F211F2A44EECF5CF9C5A4 /* Pods_MoeMAL.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +64,8 @@
 		5DC062A91D3FF7D800EEBE8E /* MALObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MALObject.swift; sourceTree = "<group>"; };
 		5DC062AB1D3FF83F00EEBE8E /* MALAnime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MALAnime.swift; sourceTree = "<group>"; };
 		5DC062AD1D3FF85700EEBE8E /* MALManga.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MALManga.swift; sourceTree = "<group>"; };
+		5DE391F71D41488C00ED1F9A /* MMExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMExtensions.swift; sourceTree = "<group>"; };
+		5DE391FA1D41597E00ED1F9A /* MMCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MMCardView.swift; sourceTree = "<group>"; };
 		A823766E2F9043527E776919 /* Pods-MoeMALUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMALUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMALUITests/Pods-MoeMALUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BA5559A771266CB24C0131CC /* Pods_MoeMALUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoeMALUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA21C9665D029640484178FD /* Pods-MoeMAL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoeMAL.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoeMAL/Pods-MoeMAL.release.xcconfig"; sourceTree = "<group>"; };
@@ -159,8 +163,10 @@
 				5D48B0781D3EED1D00AB798D /* AppDelegate.swift */,
 				5D48B07A1D3EED1D00AB798D /* ViewController.swift */,
 				5DC062A71D3FF7BA00EEBE8E /* Storyboards */,
-				5D25C28E1D40177400C4CD11 /* Objects */,
 				5DC062A61D3FF7AD00EEBE8E /* MAL API */,
+				5D25C28E1D40177400C4CD11 /* Objects */,
+				5DE391F91D41596B00ED1F9A /* Custom Views */,
+				5DE391F61D41487F00ED1F9A /* Utilities */,
 				5D25C28A1D4016BB00C4CD11 /* Libraries */,
 				5D48B07C1D3EED1D00AB798D /* Assets.xcassets */,
 				5D48B0811D3EED1D00AB798D /* Info.plist */,
@@ -210,6 +216,22 @@
 				5DC062AD1D3FF85700EEBE8E /* MALManga.swift */,
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		5DE391F61D41487F00ED1F9A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				5DE391F71D41488C00ED1F9A /* MMExtensions.swift */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		5DE391F91D41596B00ED1F9A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				5DE391FA1D41597E00ED1F9A /* MMCardView.swift */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 		8E6B5C0054CED346B148B3AF /* Pods */ = {
@@ -487,12 +509,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D48B07B1D3EED1D00AB798D /* ViewController.swift in Sources */,
+				5DE391FB1D41597E00ED1F9A /* MMCardView.swift in Sources */,
 				5DC062AC1D3FF83F00EEBE8E /* MALAnime.swift in Sources */,
 				5DC062AA1D3FF7D800EEBE8E /* MALObject.swift in Sources */,
 				5DC062AE1D3FF85700EEBE8E /* MALManga.swift in Sources */,
 				5D25C2901D40178700C4CD11 /* MMColors.swift in Sources */,
 				5D25C28D1D4016D000C4CD11 /* NSColorFromHex.swift in Sources */,
 				5D48B0791D3EED1D00AB798D /* AppDelegate.swift in Sources */,
+				5DE391F81D41488C00ED1F9A /* MMExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

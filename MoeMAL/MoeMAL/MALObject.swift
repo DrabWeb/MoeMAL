@@ -17,6 +17,9 @@ class MALObject {
     /// The title of this object
     var title : String = "";
     
+    /// The japanese title of this object
+    var japaneseTitle : String = "";
+    
     /// The synopsis of this object
     var synopsis : String = "";
     
@@ -30,14 +33,11 @@ class MALObject {
                 
                 // Yes I probably shouldn't do this index chaining for scraping
                 
-                /// The XML of the content tr element
-                let contentXml : XMLElement = pageXml.body!.children[0].children[3].children[2].children[1].children[0].children[0];
+                /// The root XML element that holds all the content we need to parse
+                let contentXml : XMLElement = pageXml.body!.children[0].children[3].children[2];
                 
-                // Set the title(Its outside of the contentXml div, so its easier to do here)
-                self.title = pageXml.body!.children[0].children[3].children[2].children[0].children[1].children[0].stringValue;
-                
-                // Parse the content XML
-                self.parseXml(contentXml);
+                // Parse the content XML, and call the completion handler with the returned object
+                completionHandler(self.parseXml(contentXml));
             }
             catch let error as NSError {
                 // Print the error to the log
@@ -46,15 +46,48 @@ class MALObject {
         }
     }
     
-    /// Parses the given MAL XML(Passed the tr that holds the actual content) and returns an object from it
+    /// Parses the given MAL XML and returns an object from it
     func parseXml(xml : XMLElement) -> MALObject {
         /// The MAL object to return
         let object : MALObject = MALObject();
         
         // Parse the XML
-//        print(xml);
         
-        print(self.title);
+        /// The root XML element that holds the sidebar content
+        let sidebarXml : XMLElement = xml.children[1].children[0].children[0].children[0].children[0];
+        
+        /// The root XML element that holds the inner content(synopsis, characters, ETC.)
+        let innerXml : XMLElement = xml.children[1].children[0].children[0].children[1].children[0].children[3].children[0].children[0];
+        
+        // Set the image URL
+        object.imageUrl = sidebarXml.children[0].children[0].children[0].attributes["data-src"]!;
+        
+        // Set the title
+        object.title = xml.children[0].children[1].children[0].stringValue;
+        
+        // For every element in the sidebar...
+        for(_, currentElement) in sidebarXml.children.enumerate() {
+            // If the current element is for the japanese title of this object...
+            if(currentElement.stringValue.containsString("Japanese: ")) {
+                /// This object's japanese title, cleaned
+                var cleanedJapaneseTitle : String = currentElement.stringValue;
+                
+                // Remove new lines
+                cleanedJapaneseTitle = cleanedJapaneseTitle.stringByReplacingOccurrencesOfString("\n", withString: "");
+                
+                /// Remove the "Japanese: " string
+                cleanedJapaneseTitle = cleanedJapaneseTitle.stringByReplacingOccurrencesOfString("Japanese: ", withString: "");
+                
+                // Remove whitespace from the string(For some reason it puts excess in the beginning and end of the string sometimes)
+                cleanedJapaneseTitle = cleanedJapaneseTitle.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet());
+                
+                // Set the japanese title
+                object.japaneseTitle = cleanedJapaneseTitle;
+            }
+        }
+        
+        // Set the synopsis
+        object.synopsis = innerXml.children[2].stringValue;
         
         // Return the MAL object
         return object;
