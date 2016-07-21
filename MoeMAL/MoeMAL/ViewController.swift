@@ -26,7 +26,7 @@ class ViewController: NSViewController {
     
     func objectLoaded(object : MALObject) {
         print("\(object.imageUrl)");
-        print("\(object.title)(\(object.japaneseTitle))");
+        print("\(object.title)(\(object.japaneseTitle))(\(object.englishTitle))(\(object.synonymTitles))");
         print("\(object.synopsis)");
         print("");
     }

@@ -20,6 +20,12 @@ class MALObject {
     /// The japanese title of this object
     var japaneseTitle : String = "";
     
+    /// The english title of this object(If any)
+    var englishTitle : String = "";
+    
+    /// The synonyms for the title of this object(If any)
+    var synonymTitles : String = "";
+    
     /// The synopsis of this object
     var synopsis : String = "";
     
@@ -78,11 +84,36 @@ class MALObject {
                 /// Remove the "Japanese: " string
                 cleanedJapaneseTitle = cleanedJapaneseTitle.stringByReplacingOccurrencesOfString("Japanese: ", withString: "");
                 
-                // Remove whitespace from the string(For some reason it puts excess in the beginning and end of the string sometimes)
-                cleanedJapaneseTitle = cleanedJapaneseTitle.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet());
-                
                 // Set the japanese title
-                object.japaneseTitle = cleanedJapaneseTitle;
+                object.japaneseTitle = cleanedJapaneseTitle.withoutExcessWhitespace;
+            }
+            // If the current element is for the english title of this object...
+            else if(currentElement.stringValue.containsString("English: ")) {
+                /// This object's english title, cleaned
+                var cleanedEnglishTitle : String = currentElement.stringValue;
+                
+                // Remove new lines
+                cleanedEnglishTitle = cleanedEnglishTitle.stringByReplacingOccurrencesOfString("\n", withString: "");
+                
+                /// Remove the "English: " string
+                cleanedEnglishTitle = cleanedEnglishTitle.stringByReplacingOccurrencesOfString("English: ", withString: "");
+                
+                // Set the english title
+                object.englishTitle = cleanedEnglishTitle.withoutExcessWhitespace;
+            }
+            // If the current element is for the synonym title of this object...
+            else if(currentElement.stringValue.containsString("Synonyms: ")) {
+                /// This object's synonym title, cleaned
+                var cleanedSynonymTitles : String = currentElement.stringValue;
+                
+                // Remove new lines
+                cleanedSynonymTitles = cleanedSynonymTitles.stringByReplacingOccurrencesOfString("\n", withString: "");
+                
+                /// Remove the "Synonyms: " string
+                cleanedSynonymTitles = cleanedSynonymTitles.stringByReplacingOccurrencesOfString("Synonyms: ", withString: "");
+                
+                // Set the synonym titles
+                object.synonymTitles = cleanedSynonymTitles.withoutExcessWhitespace;
             }
         }
         
